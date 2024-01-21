@@ -1,0 +1,122 @@
+/* index.css */
+
+header {
+  background: linear-gradient(to right, #9AC8CB 10%, #F3FEFF 90%);
+  padding: 5px 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header-container{
+  display: flex; 
+  align-items: center;
+}
+
+.img-titulo{
+  height: 40px; 
+  width: 300px; 
+  margin-left: auto;
+}
+
+.img-logo{
+  height: 30px; 
+  width: 30px; 
+  margin-left: auto;
+}
+
+body {
+  background-color: #DFFEFF;
+  min-height: 100vh; 
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section-center {
+background-color: white;
+border-radius: 10px;
+padding: 80px;
+margin: 20px auto;
+max-width: 300px;
+height: 460px;
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+
+img {
+  width: 250px; 
+  max-height: 250px; 
+  object-fit: contain; 
+  margin-top: 0px;
+  margin-bottom: auto; 
+}
+}
+
+.p-slogan{
+  font-weight: bold; 
+  text-align: center;
+}
+
+form label,
+form input {
+font-weight: bold;
+margin-bottom: 20px;
+width: 400px; 
+height: 40px; 
+margin-bottom: 10px; 
+box-sizing: border-box; 
+}
+
+.submit-input {
+background-color: #9AC8CB; 
+color: white; 
+padding: 10px 20px; 
+font-size: 16px; 
+border: none; 
+border-radius: 5px; 
+cursor: pointer; 
+}
+
+.submit-input:hover {
+background-color: gray; 
+}
+
+.login-container{
+  background-color: white;
+
+}
+footer {
+  background-color: #9AC8CB;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.section-footer {
+  background-color: #9AC8CB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+
+.text-footer {
+  text-align: center;
+}
+
+.img-wp{
+  height: 30px; 
+  width: 30px; 
+  margin-right: auto;
+}
+
+.img-ig{
+  height: 30px; 
+  width: 30px; 
+  margin-left: auto;
+}
