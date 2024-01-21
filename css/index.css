@@ -101,22 +101,23 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  padding: 0 10px;
 }
 
 
 .text-footer {
   text-align: center;
+  flex-grow: 1;
 }
 
 .img-wp{
   height: 30px; 
   width: 30px; 
-  margin-right: auto;
+  margin-right: 10px;
 }
 
 .img-ig{
   height: 30px; 
   width: 30px; 
-  margin-left: auto;
+  margin-left: 10px;
 }
