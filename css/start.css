@@ -42,7 +42,7 @@
       position: fixed;
       left: 0;
       top: 0;
-      padding-top: 60px;  /* Ajusta esta línea según la altura de tu header */
+      padding-top: 60px; 
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
