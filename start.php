@@ -10,7 +10,9 @@
 
   <header>
     <section class="header-container">
-      <img class="img-titulo" src="images/ClinicaRenacer.png" alt="Titulo">
+      <a href="start.php">
+        <img class="img-titulo" src="images/ClinicaRenacer.png" alt="Titulo">
+      </a>
     </section>
     <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -24,8 +26,8 @@
   </header>
 
   <nav>
+    <ul>MENU</ul>
     <ul class="nav-options">
-      <li><a href="#">Calendario</a></li>
       <li><a href="#">Historia Clinica</a></li>
       <li><a href="#">Control de Citas</a></li>
       <li><a href="#">Certificado</a></li>
