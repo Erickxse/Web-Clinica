@@ -25,6 +25,10 @@
       margin-left: auto;
       transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     }
+
+    .img-titulo:hover{
+      opacity: 0.5;
+    }
     
     .img-titulo.shrink {
       opacity: 0;
