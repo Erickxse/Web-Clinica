@@ -24,6 +24,13 @@
       width: 300px; 
       margin-left: auto;
     }
+
+    .burger-icon{
+      height: 25px; 
+      width: 25px;  
+      margin-left: 10px;
+      margin-top: -8px;
+    }
     
     .img-logo{
       height: 30px; 
@@ -74,6 +81,10 @@
       font-weight: bold;
     }
 
+    .oculto {
+      display: none;
+    }
+    
     .content {
     display: flex;
     align-items: stretch;

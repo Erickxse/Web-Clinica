@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HISTORIAS CLINICAS | CLINICA</title>
   <link rel="stylesheet" href="css/start.css">
+  <script src="start.js"></script>
 </head>
 <body>
 
@@ -13,6 +14,7 @@
       <a href="start.php">
         <img class="img-titulo" src="images/ClinicaRenacer.png" alt="Titulo">
       </a>
+      <img class="burger-icon" src="images/burguer-icon.png" alt="MenuBurger">
     </section>
     <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -25,7 +27,7 @@
     <img class="img-logo" src="images/clinic-logo.png" alt="Logo">
   </header>
 
-  <nav>
+  <nav class="oculto">
     <ul>MENU</ul>
     <ul class="nav-options">
       <li><a href="#">Historia Clinica</a></li>
