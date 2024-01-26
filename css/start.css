@@ -88,11 +88,17 @@
     }
     
     .content {
-    display: flex;
-    align-items: stretch;
-    margin-left: 200px;
-    padding: 16px;
+      display: flex;
+      align-items: stretch;
+      margin-left: 200px; /* Este es tu margen original */
+      padding: 16px;
+      transition: margin-left 0.3s ease-in-out; /* Agrega una transición suave */
     }
+    
+    .content.expand-content {
+      margin-left: 0; /* Ajusta el margen para expandir el contenido */
+    }
+    
 
     .section-info {
     width: 50%;
