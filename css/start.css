@@ -19,12 +19,20 @@
       align-items: center;
     }
 
-    .img-titulo{
-      height: 40px; 
-      width: 300px; 
+    .img-titulo {
+      height: 40px;
+      width: 300px;
       margin-left: auto;
+      transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     }
-
+    
+    .img-titulo.shrink {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    
     .burger-icon{
       height: 25px; 
       width: 25px;  

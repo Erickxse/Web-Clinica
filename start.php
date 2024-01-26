@@ -12,7 +12,7 @@
   <header>
     <section class="header-container">
       <a href="start.php" class="img-titulo-link">
-        <img class="img-titulo" src="images/ClinicaRenacer.png" alt="Titulo">
+        <img class="img-titulo estetoscopio-logo" src="images/ClinicaRenacer.png" alt="Titulo">
       </a>
       <img class="burger-icon" src="images/burguer-icon.png" alt="MenuBurger">
     </section>
