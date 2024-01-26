@@ -35,14 +35,17 @@
       width: 0;
       height: 0;
     }
-    
-    
+
     .burger-icon{
       height: 25px; 
       width: 25px;  
       margin-left: 10px;
       margin-top: -8px;
       cursor: pointer;
+    }
+
+    .burger-icon:hover{
+      opacity: 0.5;
     }
     
     .img-logo{
