@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HISTORIAS CLINICAS | CLINICA</title>
   <link rel="stylesheet" href="css/start.css">
-  <script src="start.js"></script>
 </head>
 <body>
 
   <header>
     <section class="header-container">
-      <a href="start.php">
+      <a href="start.php" class="img-titulo-link">
         <img class="img-titulo" src="images/ClinicaRenacer.png" alt="Titulo">
       </a>
       <img class="burger-icon" src="images/burguer-icon.png" alt="MenuBurger">
@@ -27,7 +26,7 @@
     <img class="img-logo" src="images/clinic-logo.png" alt="Logo">
   </header>
 
-  <nav class="oculto">
+  <nav id="navbar">
     <ul>MENU</ul>
     <ul class="nav-options">
       <li><a href="#">Historia Clinica</a></li>
@@ -98,4 +97,16 @@
   </footer>
 
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var navbar = document.getElementById('navbar');
+    var burgerIcon = document.querySelector('.burger-icon');
+
+    burgerIcon.addEventListener('click', function () {
+      navbar.classList.toggle('hide-navbar');
+    });
+  });
+</script>
+
 </html>
