@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HISTORIAS CLINICAS | CLINICA</title>
   <link rel="stylesheet" href="css/start.css">
+  <script src="js/start.js"></script>
 </head>
 <body>
 
@@ -97,16 +98,5 @@
   </footer>
 
 </body>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var navbar = document.getElementById('navbar');
-    var burgerIcon = document.querySelector('.burger-icon');
-
-    burgerIcon.addEventListener('click', function () {
-      navbar.classList.toggle('hide-navbar');
-    });
-  });
-</script>
 
 </html>
