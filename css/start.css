@@ -208,3 +208,37 @@
       width: 30px; 
       margin-left: auto;
     }
+
+    .body-cc {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #9AC8CB;
+    }
+    
+    .h1-cc {
+      text-align: center;
+    }
+    
+    .table-cc {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    .th-cc, .td-cc {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    .th-cc {
+      background-color: #f2f2f2;
+    }
+    
+    .form-cc {
+      margin-top: 20px;
+    }
+    
+    input[type="text"], input[type="date"], input[type="submit"] {
+      padding: 5px;
+    }
