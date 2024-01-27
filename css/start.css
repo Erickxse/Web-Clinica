@@ -27,7 +27,7 @@
     }
     
     .img-titulo:hover{
-      opacity: 0.8;
+      opacity: 0.5;
     }
 
     .img-titulo.shrink {
@@ -46,7 +46,7 @@
     }
 
     .burger-icon:hover{
-      opacity: 0.8;
+      opacity: 0.5;
     }
     
     .img-logo{
