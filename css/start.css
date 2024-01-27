@@ -2,7 +2,6 @@
      body {
       margin: 0;
     }
-
     header {
       z-index: 1;
       position: relative;
@@ -27,7 +26,7 @@
     }
     
     .img-titulo:hover{
-      opacity: 0.5;
+      opacity: 0.3;
     }
 
     .img-titulo.shrink {
@@ -35,8 +34,6 @@
       width: 0;
       height: 0;
     }
-    
-    
     .burger-icon{
       height: 25px; 
       width: 25px;  
@@ -44,15 +41,46 @@
       margin-top: -8px;
       cursor: pointer;
     }
-
     .burger-icon:hover{
-      opacity: 0.5;
+      opacity: 0.3;
     }
-    
+
+    .engranaje-logo {
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+      display: none; 
+    }
+
+    .engranaje-logo:hover{
+      opacity: 0.3;
+    }
+
+    .engranaje-logo.shrink{
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
     .img-logo{
       height: 30px; 
       width: 30px; 
       margin-left: auto;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .img-logo:hover{
+      opacity: 0.3;
+    }
+
+    .img-logo.shrink{
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .img-logo.flip {
+      transform: rotateY(180deg);
+      transition: transform 0.5s ease-in-out;
     }
     
     body, html {

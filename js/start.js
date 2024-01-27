@@ -1,11 +1,10 @@
 //start.js
-
-
 document.addEventListener('DOMContentLoaded', function () {
   var navbar = document.getElementById('navbar');
   var contentSection = document.querySelector('.content');
   var burgerIcon = document.querySelector('.burger-icon');
   var imgTitulo = document.querySelector('.img-titulo');
+  var imgLogo = document.querySelector('.img-logo');
 
   burgerIcon.addEventListener('click', function () {
     navbar.classList.toggle('hide-navbar');
@@ -28,9 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
       imgTitulo.classList.remove('shrink');
     }, 300);
+
+    
+  });
+
+  imgLogo.addEventListener('mouseover', function () {
+    imgLogo.classList.add('flip');
+    imgLogo.src = 'images/engranaje-logo.png';
+  });
+
+  imgLogo.addEventListener('mouseout', function () {
+    imgLogo.classList.remove('flip');
+    imgLogo.src = 'images/clinic-logo.png';
   });
 });
-
-
-
-

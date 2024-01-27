@@ -17,14 +17,17 @@
       <img class="burger-icon" src="images/burguer-icon.png" alt="MenuBurger">
     </section>
     <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if (isset($_POST["nombre"])) {
-                    $nombre = $_POST["nombre"];
-                    echo "<p style='margin-left: 900px;'>Bienvenido! $nombre</p>";
-                }
-            }
-            ?>
-    <img class="img-logo" src="images/clinic-logo.png" alt="Logo">
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+          if (isset($_POST["nombre"])) {
+              $nombre = $_POST["nombre"];
+              echo "<p style='margin-left: 900px;'>Bienvenido! $nombre</p>";
+          }
+      }
+    ?>
+    <section class="logo-container">
+      <img class="img-logo" src="images/clinic-logo.png" alt="Logo">
+      <img class="engranaje-logo" src="images/engranaje-logo.png" alt="Engranaje" id="engranaje-icon">
+    </section>
   </header>
 
   <nav id="navbar">
@@ -86,7 +89,6 @@
             <p>Nos regimos por principios éticos y legales que garantizan la confidencialidad y protección de los datos personales. Solo el personal médico autorizado tiene acceso a dicha información, y se han establecido medidas de seguridad avanzadas para prevenir accesos no autorizados.</p>
           </section>
     </section>
-
   </section>
 
   <footer>
@@ -96,7 +98,5 @@
       <a href="https://instagram.com"><img class="img-ig" src="images/insta-logo.png" alt="Logo Instagram"></a>
     </section>
   </footer>
-
 </body>
-
 </html>
