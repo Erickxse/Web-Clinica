@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navbar.classList.toggle('hide-navbar');
     contentSection.classList.toggle('expand-content');
 
-    // Cambiar la imagen de img-titulo al hacer clic
     imgTitulo.classList.add('shrink');
 
     setTimeout(function () {

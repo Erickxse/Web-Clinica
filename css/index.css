@@ -40,14 +40,14 @@ border-radius: 10px;
 padding: 80px;
 margin: 20px auto;
 max-width: 300px;
-height: 460px;
+height: 430px;
 display: flex; 
 flex-direction: column; 
 align-items: center; 
 
 img {
-  width: 250px; 
-  max-height: 250px; 
+  width: 200px; 
+  max-height: 200px; 
   object-fit: contain; 
   margin-top: 0px;
   margin-bottom: auto; 
@@ -57,6 +57,7 @@ img {
 .p-slogan{
   font-weight: bold; 
   text-align: center;
+  font-family: "Arial", sans-serif;
 }
 
 form label,
@@ -85,7 +86,7 @@ background-color: gray;
 
 .login-container{
   background-color: white;
-
+  font-family: "Arial", sans-serif;
 }
 footer {
   background-color: #9AC8CB;
