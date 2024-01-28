@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var burgerIcon = document.querySelector('.burger-icon');
   var imgTitulo = document.querySelector('.img-titulo');
   var imgLogo = document.querySelector('.img-logo');
+  var dropdownMenu = document.getElementById('dropdownMenu');
 
   burgerIcon.addEventListener('click', function () {
     navbar.classList.toggle('hide-navbar');
@@ -31,6 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
     
   });
 
+  var isDropdownVisible = false;
+
+  imgLogo.addEventListener('click', function () {
+    if (isDropdownVisible) {
+      dropdownMenu.style.display = 'none';
+    } else {
+      dropdownMenu.style.display = 'block';
+    }
+
+    isDropdownVisible = !isDropdownVisible;
+  });
+  
   imgLogo.addEventListener('mouseover', function () {
     imgLogo.classList.add('flip');
     imgLogo.src = 'images/engranaje-logo.png';

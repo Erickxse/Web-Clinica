@@ -50,6 +50,7 @@
       width: 30px;
       margin-left: auto;
       display: none; 
+      cursor: pointer;
     }
 
     .engranaje-logo:hover{
@@ -67,6 +68,7 @@
       width: 30px; 
       margin-left: auto;
       transition: opacity 0.5s ease-in-out;
+      cursor: pointer;
     }
 
     .img-logo:hover{
@@ -83,6 +85,46 @@
       transition: transform 0.5s ease-in-out;
     }
     
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 50px; 
+      right: 10px; 
+      background-color: #f3ffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 2;
+    }
+    
+    .dropdown-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .dropdown-menu li {
+      margin-bottom: 10px;
+      padding: 10px;
+      transition: backgeound-color 0.3s;
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-menu li:hover {
+      background-color: #ccc;     }
+    
+    .dropdown-menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .dropdown-menu li i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
     body, html {
       margin: 0;
       height: 100%;
@@ -114,6 +156,8 @@
       text-align: left;
       border-bottom: 1px solid #555;
       transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
     }
 
     .nav-options li:hover {
@@ -123,7 +167,12 @@
     .nav-options li a {
       text-decoration: none;
       color: black;
-      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .nav-options li i {
+      font-size: 18px; 
+      margin-right: 10px; 
     }
 
     nav.hide-navbar {
