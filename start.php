@@ -42,7 +42,7 @@
     <ul>MENU</ul>
     <ul class="nav-options">
       <li><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
-      <li><i class="fa-solid fa-laptop-medical"></i><a href="#">Control de Citas</a></li>
+      <li data-page="pages/ControlCitas.html"><i class="fa-solid fa-laptop-medical"></i><a href="#">Control de Citas</a></li>
       <li><i class="fa-solid fa-sheet-plastic"></i><a href="#">Certificado</a></li>
       <li><i class="fa-solid fa-folder"></i><a href="#">Documentos</a></li>
       <li><i class="fa-solid fa-file-prescription"></i><a href="#">Recetario</a></li>
@@ -52,51 +52,8 @@
     </ul>
   </nav>
 
-  <section class="content">
-    <section class="patient-form">
-      <h2>Historia Clínica - Datos del Paciente</h2>
-      <form action="forms/datos.php" method="post" enctype="multipart/form-data">
-        <label for="ci">Cédula de Identidad:</label>
-        <input type="number" id="ci" name="ci" required>
+  <section class="content" id="mainContent">
 
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
-
-        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-
-        <label for="sexo">Sexo:</label>
-        <select id="sexo" name="sexo" required>
-          <option value="masculino">Masculino</option>
-          <option value="femenino">Femenino</option>
-        </select>
-
-        <label for="sintomas">Síntomas:</label>
-        <textarea id="sintomas" name="sintomas" rows="4" required></textarea>
-
-        <label for="diagnostico">Diagnóstico:</label>
-        <input type="text" id="diagnostico" name="diagnostico">
-
-        <label for="medicamentos">Medicamentos Recetados:</label>
-        <textarea id="medicamentos" name="medicamentos" rows="4"></textarea>
-
-        <label for="archivo">Adjuntar Archivo (imagen):</label>
-        <input type="file" id="archivo" name="archivo" accept="image/*">
-
-        <button type="submit" name="guardarHistoria">Guardar Historia Clínica</button>
-      </form>
-    </section>
-
-    <section class="section-info">
-        <img src="images/servicios.jpg" alt="servicios">
-        <section class="privacy-policy">
-            <h2>Política de Privacidad</h2>
-            <p>Nos regimos por principios éticos y legales que garantizan la confidencialidad y protección de los datos personales. Solo el personal médico autorizado tiene acceso a dicha información, y se han establecido medidas de seguridad avanzadas para prevenir accesos no autorizados.</p>
-          </section>
-    </section>
   </section>
 
   <footer>

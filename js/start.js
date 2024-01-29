@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var imgLogo = document.querySelector('.img-logo');
   var dropdownMenu = document.getElementById('dropdownMenu');
 
+  const navOptions = document.querySelectorAll('.nav-options li');
+
   burgerIcon.addEventListener('click', function () {
     navbar.classList.toggle('hide-navbar');
     contentSection.classList.toggle('expand-content');
@@ -53,4 +55,27 @@ document.addEventListener('DOMContentLoaded', function () {
     imgLogo.classList.remove('flip');
     imgLogo.src = 'images/clinic-logo.png';
   });
+
+
+  navOptions.forEach(option => {
+    option.addEventListener('click', function () {
+        // Obtener la ruta de la página correspondiente
+        const pagePath = this.dataset.page;
+
+        // Cargar el contenido de la página utilizando fetch
+        fetch(pagePath)
+            .then(response => response.text())
+            .then(content => {
+                // Insertar el contenido en la sección content
+                document.getElementById('mainContent').innerHTML = content;
+
+                // Remover la clase 'active' de todas las opciones
+                navOptions.forEach(opt => opt.classList.remove('active'));
+
+                // Agregar la clase 'active' a la opción actual
+                this.classList.add('active');
+            })
+            .catch(error => console.error('Error al cargar la página', error));
+    });
+});
 });
