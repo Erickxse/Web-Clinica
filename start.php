@@ -41,7 +41,7 @@
   <nav id="navbar">
     <ul>MENU</ul>
     <ul class="nav-options">
-      <li><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
+      <li data-page="pages/HistoriaClinica.html"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
       <li data-page="pages/ControlCitas.html"><i class="fa-solid fa-laptop-medical"></i><a href="#">Control de Citas</a></li>
       <li><i class="fa-solid fa-sheet-plastic"></i><a href="#">Certificado</a></li>
       <li><i class="fa-solid fa-folder"></i><a href="#">Documentos</a></li>
