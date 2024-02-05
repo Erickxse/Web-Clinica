@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var imgLogo = document.querySelector('.img-logo');
   var dropdownMenu = document.getElementById('dropdownMenu');
 
-  const navOptions = document.querySelectorAll('.nav-options li');
+  const navOptions = document.querySelectorAll('#navOptions li');
 
   burgerIcon.addEventListener('click', function () {
     navbar.classList.toggle('hide-navbar');
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(function () {
       if (imgTitulo.src.includes('ClinicaRenacer.png')) {
-        imgTitulo.src = 'images/estetoscopio-logo.png'; 
+        imgTitulo.src = '../images/estetoscopio-logo.png'; 
         imgTitulo.alt = 'Estetoscopio';
         imgTitulo.style.height = '30px'; 
         imgTitulo.style.width = '30px';
       } else {
-        imgTitulo.src = 'images/ClinicaRenacer.png'; 
+        imgTitulo.src = '../images/ClinicaRenacer.png'; 
         imgTitulo.alt = 'Titulo';
         imgTitulo.style.height = '40px'; 
         imgTitulo.style.width = '300px';
@@ -48,34 +48,25 @@ document.addEventListener('DOMContentLoaded', function () {
   
   imgLogo.addEventListener('mouseover', function () {
     imgLogo.classList.add('flip');
-    imgLogo.src = 'images/engranaje-logo.png';
+    imgLogo.src = '../images/engranaje-logo.png';
   });
 
   imgLogo.addEventListener('mouseout', function () {
     imgLogo.classList.remove('flip');
-    imgLogo.src = 'images/clinic-logo.png';
+    imgLogo.src = '../images/clinic-logo.png';
   });
 
 
   navOptions.forEach(option => {
     option.addEventListener('click', function () {
+      var pagePath = this.dataset.page; // Asegúrate de tener el atributo data-page en tus elementos li
 
-        const pagePath = this.dataset.page;
+      // Restaltar la opción seleccionada
+      navOptions.forEach(opt => opt.classList.remove('active'));
+      this.classList.add('active');
 
-        // Cargar el contenido de la página utilizando fetch
-        fetch(pagePath)
-            .then(response => response.text())
-            .then(content => {
-
-                document.getElementById('mainContent').innerHTML = content;
-
-
-                navOptions.forEach(opt => opt.classList.remove('active'));
-
-
-                this.classList.add('active');
-            })
-            .catch(error => console.error('Error al cargar la página', error));
+      // Redirigir a la página correspondiente
+      window.location.href = pagePath;
     });
-});
+  });
 });
