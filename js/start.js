@@ -6,9 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var imgTitulo = document.querySelector('.img-titulo');
   var imgLogo = document.querySelector('.img-logo');
   var dropdownMenu = document.getElementById('dropdownMenu');
+  
 
   const navOptions = document.querySelectorAll('#navOptions li');
 
+  
   burgerIcon.addEventListener('click', function () {
     navbar.classList.toggle('hide-navbar');
     contentSection.classList.toggle('expand-content');
