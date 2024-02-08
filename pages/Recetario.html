@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetario</title>
     <script src="https://kit.fontawesome.com/2e20a61ec9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estructura.css">
@@ -18,15 +17,6 @@
             </a>
             <img class="burger-icon" src="../images/burguer-icon.png" alt="MenuBurger">
           </section>
-
-          <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if (isset($_POST["nombre"])) {
-                    $nombre = $_POST["nombre"];
-                    echo "<p style='margin-left: 900px;'>Bienvenido! $nombre</p>";
-                }
-            }
-          ?>
 
           <section class="logo-container">
             <img class="img-logo" src="../images/clinic-logo.png" alt="Logo">
@@ -75,7 +65,7 @@
             <button type="submit">Agregar Receta</button>
         </form>
     </section>
-    
+
     <section class="section-info">
         <img src="../images/servicios.jpg" alt="servicios">
         <section class="privacy-policy">
