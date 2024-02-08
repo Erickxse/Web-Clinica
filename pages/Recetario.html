@@ -48,9 +48,32 @@
   </nav>
 
   <section  id="mainContent" class="content">
-    <section id="formulario-container" class="formulario">
-      <!-- Aquí se generará el formulario dinámicamente -->
-    </section>
+    <section id="formulario" class="formulario-container"">
+      <h2>Agregar receta</h2>
+      <form id="recetarioForm">
+        <label for="nombrePaciente">Nombre del paciente</label>
+        <input type="nombre" id="nombre" name="nombre" required>
+
+        <label for="medicamento">Agregar medicamento</label>
+        <select id="medicamento" name="medicamento" required>
+          <option value="">Seleccionar</option>
+          <option value="Ibuprofeno">Ibuprofeno</option>
+          <option value="Paracetamol">Paracetamol</option>
+          <option value="Amoxicilina">Amoxicilina</option>
+          <option value="Omeprazol">Omeprazol</option>
+          <option value="Lexotiroxina">Lexotiroxina</option>
+        </select>
+    
+        <label for="cantidad">Cantidad</label>
+        <input type="cantidad" id="cantidad" name="cantidad" required>
+    
+        <label for="unidad">Unidad</label>
+        <input type ="unidad" id="unidad" name="unidad" required>
+    
+        <button type="submit">Guardar receta</button>
+      </form>
+    </div>
+    
 
   </section>
   <footer>
