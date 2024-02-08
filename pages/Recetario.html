@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../css/start.css">
   <link rel="stylesheet" href="../css/estructura.css">
   <script src="../js/start.js"></script>
+  <script src="../js/recetario.js"></script>
 </head>
 
 <body>
@@ -46,32 +47,11 @@
     </ul>
   </nav>
 
-  <section class="content" id="mainContent">
-    <section id="recetas" class="main-content">
-        <h2>Agregar Receta</h2>
-        <ul class="recetas-list">
-            <li>
-                <h3>Receta para: Nombre del Paciente</h3>
-            </li>
-        </ul>
+  <section  id="mainContent" class="content">
+    <section id="formulario-container" class="formulario">
+      <!-- Aquí se generará el formulario dinámicamente -->
     </section>
 
-    <section id="agregar-receta" class="main-content">
-        <h2>Agregar Receta</h2>
-        <!-- Formulario para agregar una nueva receta -->
-        <form action="#" method="POST">
-            <label for="paciente">Nombre del Paciente:</label>
-            <input type="text" id="paciente" name="paciente" required>
-
-            <label for="medicamentos">Medicamentos:</label>
-            <textarea id="medicamentos" name="medicamentos" required></textarea>
-
-            <label for="indicaciones">Indicaciones:</label>
-            <textarea id="indicaciones" name="indicaciones" required></textarea>
-
-            <button type="submit">Agregar Receta</button>
-        </form>
-    </section>
   </section>
   <footer>
     <section class="section-footer">

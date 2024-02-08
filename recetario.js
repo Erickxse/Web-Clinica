@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+    
 // Crear formulario
 const formulario = document.createElement('form');
 formulario.setAttribute('id', 'receta-form');
@@ -81,4 +83,5 @@ guardarButton.addEventListener('click', function() {
     
     // Limpiar el formulario después de guardar la receta
     formulario.reset();
+});
 });
