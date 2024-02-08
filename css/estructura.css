@@ -165,7 +165,7 @@ body {
   }
   
   .nav-options li.active {
-    background-color: #9AC8CB; /* Color de resaltado para la opción activa */
+    background-color: #9AC8CB; 
     color: white; 
   }
   
@@ -178,12 +178,22 @@ body {
   .nav-options li i {
     font-size: 18px; 
     margin-right: 10px; 
+    text-align: center;
   }
   
-  nav.hide-navbar {
-    transform: translateX(-200px);
-    transition: transform 0.3s ease-in-out;
+  .nav-options li.hide-text a,
+  #menuText.hide-text {
+    display: none;
   }
+
+  .nav-options li.hide-text i {
+  margin-right: 0;
+  }
+
+  nav.shrink-navbar {
+    width: 50px; 
+  }
+
 
   footer {
     background-color: #9AC8CB;

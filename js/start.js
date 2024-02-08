@@ -11,11 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const navOptions = document.querySelectorAll('#navOptions li');
   
   burgerIcon.addEventListener('click', function () {
-    navbar.classList.toggle('hide-navbar');
+    navbar.classList.toggle('shrink-navbar');
     contentSection.classList.toggle('expand-content');
 
     imgTitulo.classList.add('shrink');
 
+    navOptions.forEach(option => {
+      option.classList.toggle('hide-text');
+    });
+
+    var menuText = document.getElementById('menuText'); 
+    menuText.classList.toggle('hide-text');
     setTimeout(function () {
       if (imgTitulo.src.includes('ClinicaRenacer.png')) {
         imgTitulo.src = '../images/estetoscopio-logo.png'; 
@@ -30,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       imgTitulo.classList.remove('shrink');
-    }, 300);
-
-    
+    }, 300); 
   });
 
   var isDropdownVisible = false;
@@ -61,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   navOptions.forEach(option => {
     option.addEventListener('click', function () {
       var pagePath = this.dataset.page; // Asegúrate de tener el atributo data-page en tus elementos li
-      console.log('Redirigiendo a:', pagePath);
+      
       // Restaltar la opción seleccionada
       navOptions.forEach(opt => opt.classList.remove('active'));
       this.classList.add('active');
