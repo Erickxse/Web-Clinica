@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
   <title>HISTORIAS CLINICAS | CLINICA</title>
   <script src="https://kit.fontawesome.com/2e20a61ec9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/start.css">
@@ -35,21 +36,20 @@
   <nav id="navbar">
     <ul id="menuText">MENU</ul>
     <ul id="navOptions" class="nav-options">
-      <li data-page="HistoriaClinica.html"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
-      <li data-page="ControlCitas.html"><i class="fa-solid fa-laptop-medical"></i><a href="#">Control de Citas</a></li>
-      <li><i class="fa-solid fa-sheet-plastic"></i><a href="#">Certificado</a></li>
-      <li><i class="fa-solid fa-folder"></i><a href="#">Documentos</a></li>
-      <li data-page="Recetario.html"><i class="fa-solid fa-file-prescription"></i><a href="#">Recetario</a></li>
-      <li data-page="start.html" class="active"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
-      <li><i class="fa-solid fa-chart-column"></i><a href="#">Graficas Pediatria</a></li>
-      <li><i class="fa-solid fa-book-medical"></i><a href="#">Informes Medicos</a></li>
+      <li data-page="HistoriaClinica.html" title="Historia Clínica"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
+      <li data-page="ControlCitas.html" title="Control de Citas"><i class="fa-solid fa-laptop-medical"></i><a href="#">Control de Citas</a></li>
+      <li title="Certificado"><i class="fa-solid fa-sheet-plastic"></i><a href="#">Certificado</a></li>
+      <li title="Documentos"><i class="fa-solid fa-folder"></i><a href="#">Documentos</a></li>
+      <li data-page="Recetario.html" c><i class="fa-solid fa-file-prescription"></i><a href="#">Recetario</a></li>
+      <li data-page="start.html" class="active" title="Calendario"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
+      <li title="Graficas"><i class="fa-solid fa-chart-column"></i><a href="#">Graficas Pediatria</a></li>
+      <li title="Informes Medicos"><i class="fa-solid fa-book-medical"></i><a href="#">Informes Medicos</a></li>
     </ul>
   </nav>
   
   <section class="content" id="mainContent">
-    <section class="banner-container">
-      <img src="../images/banner-clinicaa.jpg" alt="banner">
-    </section>
+    <div class="calendario" id='calendar'></div>
+    <script src = "../js/calendar.js"></script>
   </section>
 
   <footer>
