@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var imgTitulo = document.querySelector('.img-titulo');
   var imgLogo = document.querySelector('.img-logo');
   var dropdownMenu = document.getElementById('dropdownMenu');
+  var body = document.body;
   
 
   const navOptions = document.querySelectorAll('#navOptions li');
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     navbar.classList.toggle('shrink-navbar');
     contentSection.classList.toggle('expand-content');
 
+    body.classList.toggle('shrink-body');
+    
     imgTitulo.classList.add('shrink');
 
     navOptions.forEach(option => {

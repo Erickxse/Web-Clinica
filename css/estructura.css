@@ -1,6 +1,13 @@
 body {
-    margin: 0;
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  transition: padding-left 0.5s ease-in-out; /* Agregamos una transición para suavizar el ajuste */
+}
+
+body.shrink-body {
+  padding-left: 50px; /* Ajusta este valor según el ancho del navbar en su versión reducida */
+}
   header {
     z-index: 1;
     position: relative;
