@@ -84,5 +84,3 @@ guardarButton.addEventListener('click', function() {
     // Limpiar el formulario después de guardar la receta
     formulario.reset();
 });
-
-});
