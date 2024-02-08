@@ -44,12 +44,12 @@
     <nav id="navbar">
         <ul>MENU</ul>
         <ul id="navOptions" class="nav-options">
-          <li data-page="HistoriaClinica.html" class="active"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
+          <li data-page="HistoriaClinica.html"><i class="fa-solid fa-hospital-user"></i><a href="#">Historia Clinica</a></li>
           <li data-page="ControlCitas.html"><i class="fa-solid fa-laptop-medical"></i><a href="#">Control de Citas</a></li>
           <li><i class="fa-solid fa-sheet-plastic"></i><a href="#">Certificado</a></li>
           <li><i class="fa-solid fa-folder"></i><a href="#">Documentos</a></li>
-          <li data-page="Recetario.html"><i class="fa-solid fa-file-prescription"></i><a href="#">Recetario</a></li>
-          <li data-page="start.html" class="active"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
+          <li data-page="Recetario.html" class="active"><i class="fa-solid fa-file-prescription"></i><a href="#">Recetario</a></li>
+          <li data-page="start.html"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
           <li><i class="fa-solid fa-chart-column"></i><a href="#">Graficas Pediatria</a></li>
           <li><i class="fa-solid fa-book-medical"></i><a href="#">Informes Medicos</a></li>
         </ul>
@@ -57,35 +57,39 @@
 
     <section id="recetas" class="main-content">
         <h2>Agregar Receta</h2>
-        <ul class="recetas-list">
-            <li>
-                <h3>Receta para: Nombre del Paciente</h3>
-            </li>
-        </ul>
     </section>
 
     <section id="agregar-receta" class="main-content">
         <h2>Agregar Receta</h2>
         <!-- Formulario para agregar una nueva receta -->
         <form action="#" method="POST">
-            <label for="paciente">Nombre del Paciente:</label>
+            <label for="paciente">Nombre del Paciente</label>
             <input type="text" id="paciente" name="paciente" required>
 
-            <label for="medicamentos">Medicamentos:</label>
+            <label for="medicamentos">Añadir medicamentos</label>
             <textarea id="medicamentos" name="medicamentos" required></textarea>
 
-            <label for="indicaciones">Indicaciones:</label>
+            <label for="indicaciones">Cantidad</label>
             <textarea id="indicaciones" name="indicaciones" required></textarea>
 
             <button type="submit">Agregar Receta</button>
         </form>
     </section>
-    <footer>
-        <div class="section-footer">
-            <p>© 2024 Recetario Clínico. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    
+    <section class="section-info">
+        <img src="../images/servicios.jpg" alt="servicios">
+        <section class="privacy-policy">
+            <h2>Política de Privacidad</h2>
+            <p>Nos regimos por principios éticos y legales que garantizan la confidencialidad y protección de los datos personales. Solo el personal médico autorizado tiene acceso a dicha información, y se han establecido medidas de seguridad avanzadas para prevenir accesos no autorizados.</p>
+          </section>
+    </section>
+  </section>
+  <footer>
+    <section class="section-footer">
+        <a href="https://web.whatsapp.com/"><img class="img-wp" src="../images/whatsapp-logo.png" alt="Logo WhatsApp"></a>
+        <p>© 2023 CLINICADMIN</p>
+        <a href="https://instagram.com"><img class="img-ig" src="../images/insta-logo.png" alt="Logo Instagram"></a>
+    </section>
+  </footer>
 </body>
 </html>
