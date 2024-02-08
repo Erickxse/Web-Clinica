@@ -1,6 +1,9 @@
 .main-content {
-    padding: 20px;
-    margin-top: 100px; /* Ajuste el valor según sea necesario para evitar que el contenido se solape con el encabezado */
+    display: flex;
+    align-items: stretch;
+    margin-left: 200px; 
+    padding: 16px;
+    transition: margin-left 0.3s ease-in-out; 
 }
 
 /* Estilo para el pie de página */
