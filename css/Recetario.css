@@ -1,47 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #9AC8CB;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-container h1 {
-    margin: 0;
-    color: white;
-}
-
-nav {
-    background-color: lightgray;
-    padding: 10px;
-}
-
-.nav-options {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-options li {
-    display: inline;
-    margin-right: 20px;
-}
-
 .main-content {
     padding: 20px;
+    margin-top: 100px; /* Ajuste el valor según sea necesario para evitar que el contenido se solape con el encabezado */
 }
 
+/* Estilo para el pie de página */
 footer {
     background-color: #9AC8CB;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    clear: both; /* Asegura que el pie de página se alinee correctamente incluso si hay flotadores */
 }
 
 .section-footer p {
@@ -49,14 +16,14 @@ footer {
     color: white;
 }
 
-/* Estilos específicos para el formulario de recetas */
+/* Estilo para el formulario */
 form label {
     display: block;
     margin-bottom: 5px;
 }
 
 form textarea {
-    width: 100%;
+    width: calc(100% - 22px); /* Ajuste para tener en cuenta el relleno en los campos de texto */
     height: 100px;
     margin-bottom: 10px;
 }
