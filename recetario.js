@@ -76,8 +76,6 @@ guardarButton.addEventListener('click', function() {
     const dosis = dosisInput.value;
     const indicaciones = indicacionesInput.value;
     
-    // Aquí puedes hacer lo que necesites con los valores del formulario, como enviarlos al servidor
-    
     // Ejemplo: Mostrar un mensaje de éxito
     alert('Receta guardada exitosamente.');
     
