@@ -12,19 +12,12 @@
 <body>
     <header>
         <section class="header-container">
-          <a href="start.php" class="img-titulo-link">
+          <a href="start.html" class="img-titulo-link">
             <img class="img-titulo estetoscopio-logo" src="../images/ClinicaRenacer.png" alt="Titulo">
           </a>
           <img class="burger-icon" src="../images/burguer-icon.png" alt="MenuBurger">
         </section>
-        <?php
-          if ($_SERVER["REQUEST_METHOD"] == "POST") {
-              if (isset($_POST["nombre"])) {
-                  $nombre = $_POST["nombre"];
-                  echo "<p style='margin-left: 900px;'>Bienvenido! $nombre</p>";
-              }
-          }
-        ?>
+        <p>Erick</p>
         <section class="logo-container">
           <img class="img-logo" src="../images/clinic-logo.png" alt="Logo">
           <img class="engranaje-logo" src="../images/engranaje-logo.png" alt="Engranaje" id="engranaje-icon">
@@ -46,7 +39,7 @@
             <li><i class="fa-solid fa-sheet-plastic"></i><a href="#">Certificado</a></li>
             <li><i class="fa-solid fa-folder"></i><a href="#">Documentos</a></li>
             <li><i class="fa-solid fa-file-prescription"></i><a href="#">Recetario</a></li>
-            <li ><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
+            <li data-page="start.html"><i class="fa-regular fa-calendar-days"></i><a href="#">Calendario</a></li>
             <li><i class="fa-solid fa-chart-column"></i><a href="#">Graficas Pediatria</a></li>
             <li><i class="fa-solid fa-book-medical"></i><a href="#">Informes Medicos</a></li>
         </ul>

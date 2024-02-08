@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
 
   const navOptions = document.querySelectorAll('#navOptions li');
-
   
   burgerIcon.addEventListener('click', function () {
     navbar.classList.toggle('hide-navbar');
@@ -62,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   navOptions.forEach(option => {
     option.addEventListener('click', function () {
       var pagePath = this.dataset.page; // Asegúrate de tener el atributo data-page en tus elementos li
-
+      console.log('Redirigiendo a:', pagePath);
       // Restaltar la opción seleccionada
       navOptions.forEach(opt => opt.classList.remove('active'));
       this.classList.add('active');

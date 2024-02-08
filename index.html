@@ -7,7 +7,6 @@
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <script src="like_button.js"></script>
-  <script src="js/start.js"></script>
 </head>
 
 <body>
@@ -23,13 +22,13 @@
     <img src="images/clinic-logo.png" alt="Logo">
     <p class="p-slogan">"Cuidando tu Salud, Administrando tu Bienestar"</p>
     <section class="login-container">
-      <form action="pages/start.php" method="post">
+      <form id="loginForm">
         <label for="nombre">Nombre</label><br>
         <input type="text" id="nombre" name="nombre" placeholder="Usuario" required><br>
         <label for="clave">Clave</label><br>
         <input type="password" id="clave" name="clave" placeholder="Clave" required><br>
         <br>
-        <input class="submit-input" type="submit" value="Acceder">
+        <button class="submit-input" type="button" onclick="validarCredenciales()">Acceder</button>
       </form>
     </section>
   </section>
@@ -41,5 +40,6 @@
       <a href="https://instagram.com"><img class="img-ig" src="images/insta-logo.png" alt="Logo Instagram"></a>
     </section>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
